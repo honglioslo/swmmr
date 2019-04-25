@@ -111,6 +111,7 @@ read_out <- function(file="",
                       
   # make selection of results more convenient
   iType <- .get_iType(iType = iType)$iType
+  print(iType)
   
   # retrieve times --> will probably move to Rcpp in near future
   time <- as.POSIXct(GetSwmmTimes(), tz = "GMT", origin = "1899-12-30")
